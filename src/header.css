@@ -32,3 +32,7 @@
   font-size: medium;
   background-color: transparent;
 }
+.header__right {
+  display: flex;
+  padding-right: 20px;
+}
