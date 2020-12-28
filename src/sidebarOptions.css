@@ -23,7 +23,10 @@
 }
 .sidebarOptions:hover,
 .sidebarOptions:hover > p,
-.sidebarOptions:hover > h3 {
+.sidebarOptions:hover > h3,
+.sidebarOptions__active,
+.sidebarOptions__active > p,
+.sidebarOptions__active > h3 {
   background-color: #fcecec;
   color: #c04b37;
   font-weight: 800 !important;
