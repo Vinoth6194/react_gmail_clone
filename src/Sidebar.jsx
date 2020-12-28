@@ -5,6 +5,11 @@ import "./sidebar.css";
 import SidebarOptions from "./SidebarOptions";
 import InboxIcon from "@material-ui/icons/Inbox";
 import StarIcon from "@material-ui/icons/Star";
+import AccessTimeIcon from "@material-ui/icons/AccessTime";
+import LabelImportantIcon from "@material-ui/icons/LabelImportant";
+import NearMeIcon from "@material-ui/icons/NearMe";
+import NoteIcon from "@material-ui/icons/Note";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 export default function Sidebar() {
   return (
     <div className="sidebar">
@@ -20,7 +25,12 @@ export default function Sidebar() {
         number="58"
         selected={true}
       />
-      <SidebarOptions Icon={StarIcon} title="Starrred" number="6" />
+      <SidebarOptions Icon={StarIcon} title="Starred" number="6" />
+      <SidebarOptions Icon={AccessTimeIcon} title="Snoozed" number="16" />
+      <SidebarOptions Icon={LabelImportantIcon} title="Important" number="61" />
+      <SidebarOptions Icon={NearMeIcon} title="Sent" number="69" />
+      <SidebarOptions Icon={NoteIcon} title="Drafts" number="86" />
+      <SidebarOptions Icon={ExpandMoreIcon} title="More" number="36" />
     </div>
   );
 }
