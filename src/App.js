@@ -8,7 +8,7 @@ function App() {
     <div className="app">
       <Header></Header>
       <Sidebar />
-      <h2>Gmail Clone</h2>
+      {/* <h2>Gmail Clone</h2> */}
     </div>
   );
 }
