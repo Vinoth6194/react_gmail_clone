@@ -31,3 +31,6 @@
 .sidebarOptions:hover > p {
   display: inline;
 }
+.sidebarOptions__active > p {
+  display: inline !important;
+}
