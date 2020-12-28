@@ -8,3 +8,26 @@
   cursor: pointer;
   color: #818181;
 }
+.sidebarOptions > p {
+  display: none;
+  font-weight: 300;
+}
+.sidebarOptions > h3 {
+  flex: 1;
+  margin-left: 10px;
+  font: 14px;
+  font-weight: 400;
+}
+.sidebarOptions > .MuiSvgIcon-root {
+  padding: 5px;
+}
+.sidebarOptions:hover,
+.sidebarOptions:hover > p,
+.sidebarOptions:hover > h3 {
+  background-color: #fcecec;
+  color: #c04b37;
+  font-weight: 800 !important;
+}
+.sidebarOptions:hover > p {
+  display: inline;
+}
