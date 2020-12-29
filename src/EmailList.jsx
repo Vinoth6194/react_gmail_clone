@@ -12,6 +12,7 @@ import LocalOfferIcon from "@material-ui/icons/LocalOffer";
 import InboxIcon from "@material-ui/icons/Inbox";
 import "./emailList.css";
 import Section from "./Section";
+import EmailRow from "./EmailRow";
 function EmailList() {
   return (
     <div className="emailList">
@@ -56,6 +57,14 @@ function EmailList() {
           title="Promotions"
           color="green"
         ></Section>
+      </div>
+      <div className="emailList__list">
+        <EmailRow
+          title="Twitch"
+          subject="Greetings!!!!"
+          description="Welcome to Gmail Clone"
+          time="8.38PM Dec 29 2020"
+        />
       </div>
     </div>
   );
