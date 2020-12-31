@@ -1,5 +1,5 @@
 import { Checkbox, IconButton } from "@material-ui/core";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import RedoIcon from "@material-ui/icons/Redo";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
@@ -13,7 +13,22 @@ import InboxIcon from "@material-ui/icons/Inbox";
 import "./emailList.css";
 import Section from "./Section";
 import EmailRow from "./EmailRow";
+import { db } from "./firebase";
+
 function EmailList() {
+  const [emails, setEmails] = useState([]);
+  useEffect(() => {
+    db.collection("emails")
+      .orderBy("timestamp", "desc")
+      .onSnapshot((snapshot) =>
+        setEmails(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            data: doc.data(),
+          }))
+        )
+      );
+  }, []);
   return (
     <div className="emailList">
       <div className="emailList__settings">
@@ -65,7 +80,7 @@ function EmailList() {
           description="Welcome to Gmail Clone. You can use the gmail right.You can use the gmail rightYou can use the gmail rightYou can use the gmail right"
           time="8.38PM"
         /> */}
-        <EmailRow
+        {/* <EmailRow
           title="Twitch"
           subject="Hey Fellow streamer!!!!"
           description="This is a test"
@@ -82,7 +97,17 @@ function EmailList() {
           subject="Hey Fellow streamer!!!!"
           description="This is a test"
           time="10pm"
-        />
+        /> */}
+        {emails.map(({ id, data: { to, subject, message, timestamp } }) => (
+          <EmailRow
+            id={id}
+            key={id}
+            title={to}
+            subject={subject}
+            description={message}
+            time={new Date(timestamp?.seconds * 1000).toUTCString()}
+          />
+        ))}
       </div>
     </div>
   );
