@@ -65,3 +65,9 @@
 .sendMail__message {
   flex: 1;
 }
+.sendMail__error {
+  color: red;
+  background-color: white;
+  text-align: right;
+  padding: 2px;
+}
