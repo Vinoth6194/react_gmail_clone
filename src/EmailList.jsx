@@ -59,11 +59,29 @@ function EmailList() {
         ></Section>
       </div>
       <div className="emailList__list">
-        <EmailRow
+        {/* <EmailRow
           title="Twitch"
           subject="Greetings!!!!"
-          description="Welcome to Gmail Clone"
-          time="8.38PM Dec 29 2020"
+          description="Welcome to Gmail Clone. You can use the gmail right.You can use the gmail rightYou can use the gmail rightYou can use the gmail right"
+          time="8.38PM"
+        /> */}
+        <EmailRow
+          title="Twitch"
+          subject="Hey Fellow streamer!!!!"
+          description="This is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="Hey Fellow streamer!!!!"
+          description="This is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="Hey Fellow streamer!!!!"
+          description="This is a test"
+          time="10pm"
         />
       </div>
     </div>
