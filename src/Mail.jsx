@@ -20,7 +20,7 @@ function Mail() {
   return (
     <div className="mail">
       <div className="mail__tools">
-        <div className="mail__tolleLeft">
+        <div className="mail__toolsLeft">
           <IconButton onClick={() => history.push("/")}>
             <ArrowBackIcon />
           </IconButton>
@@ -49,7 +49,7 @@ function Mail() {
             <MoreVertIcon />
           </IconButton>
         </div>
-        <div className="mail__tollsRight">
+        <div className="mail__toolsRight">
           <IconButton>
             <UnfoldMoreIcon />
           </IconButton>
