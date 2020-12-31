@@ -38,3 +38,7 @@
   font-size: 9px;
   font-weight: bold;
 }
+.emailRow__description {
+  font-weight: 400;
+  color: gray;
+}
