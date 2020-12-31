@@ -24,7 +24,7 @@ function SendMail() {
       </div>
       <form onSubmit={handleSubmit(onSubmit)}>
         <input
-          type="text"
+          type="email"
           placeholder="To"
           name="to"
           ref={register({ required: true })}
