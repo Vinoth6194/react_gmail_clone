@@ -26,3 +26,10 @@
 .emailList__list {
   padding-bottom: 20%;
 }
+.emailList::-webkit-scrollbar {
+  display: none;
+}
+.emailList {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
