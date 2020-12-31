@@ -1,3 +1,6 @@
+* {
+  overflow: hidden;
+}
 .emailList {
   flex: 1;
   overflow: scroll;
