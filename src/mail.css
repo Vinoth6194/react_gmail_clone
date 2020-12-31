@@ -46,3 +46,10 @@
 .mail__bodyHeader > p {
   margin-left: 20px;
 }
+.mail__time {
+  position: absolute;
+  top: 24px;
+  right: 0;
+  font: size 12px;
+  color: gray;
+}
