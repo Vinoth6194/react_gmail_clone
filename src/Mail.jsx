@@ -9,6 +9,9 @@ import WatchLaterIcon from "@material-ui/icons/WatchLater";
 import CheckCircleIcon from "@material-ui/icons/CheckCircle";
 import LabelImportantIcon from "@material-ui/icons/LabelImportant";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
+import UnfoldMoreIcon from "@material-ui/icons/UnfoldMore";
+import PrintIcon from "@material-ui/icons/Print";
+import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 
 import "./mail.css";
 import { useHistory } from "react-router-dom";
@@ -46,8 +49,19 @@ function Mail() {
             <MoreVertIcon />
           </IconButton>
         </div>
-        <div className="mail__tollsRight"></div>
+        <div className="mail__tollsRight">
+          <IconButton>
+            <UnfoldMoreIcon />
+          </IconButton>
+          <IconButton>
+            <PrintIcon />
+          </IconButton>
+          <IconButton>
+            <ExitToAppIcon />
+          </IconButton>
+        </div>
       </div>
+      <h1>Mail goes here</h1>
     </div>
   );
 }
