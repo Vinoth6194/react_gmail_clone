@@ -68,7 +68,9 @@ function Mail() {
           <p>Title</p>
           <p className="mail__time">10pm</p>
         </div>
-        <div className="mail__message">This is a message</div>
+        <div className="mail__message">
+          <p>This is a message</p>
+        </div>
       </div>
     </div>
   );
